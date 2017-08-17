@@ -1,0 +1,122 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+.user-background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+	background: url('../res/images/background.jpg');
+	background-position: top center;
+}
+
+.main-column {
+	width: 320px;
+	height: 100%;
+	margin: 0 auto;
+	display: -webkit-flex; 
+	display: flex;
+	align-items: center;
+}
+
+.layer {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+}
+
+.layer:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:100%;
+	height: 100%;
+	content: "";
+	z-index: -1;
+
+	background: #FFF;
+	border-radius: 10px;
+	opacity: .75;
+}
+
+.avatar {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: -70px auto 5px;
+
+	border-radius: 60px;
+	border: 5px solid #FFF;
+	-webkit-box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.3);
+	box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.3);
+}
+
+.my-name {
+	font-size: 18pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+.about-myself {
+	text-align: center;
+	font-size: 10pt;
+	color: rgba(72, 72, 72, 0.96);
+}
+
+.social-btns {
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 20px 0;
+}
+
+.social-link {
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 10pt;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.social-btn {
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 10px 10px 0 10px;
+	
+	background-repeat: no-repeat;
+}
+
+.social-btn:hover {
+	opacity: .95;
+}
+
+.vk-icon {
+	background-image: url('../res/icons/vk.png');
+}
+
+.tw-icon {
+	background-image: url('../res/icons/twitter.png');
+}
+
+.fb-icon {
+	background-image: url('../res/icons/facebook.png');
+}
+
+.tg-icon {
+	background-image: url('../res/icons/telegram.png');
+}
